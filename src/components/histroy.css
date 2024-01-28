@@ -1,6 +1,6 @@
 .hist{
     margin: 4px, 4px;
-    margin-left: 35%;
+    margin-left: 45%;
     padding: 40px;
   
     width: 500px;
@@ -8,6 +8,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     text-align: justify;
+   
     
 }
 .body{
