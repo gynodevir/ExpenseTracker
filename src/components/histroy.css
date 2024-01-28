@@ -1,6 +1,6 @@
 .hist{
     margin: 4px, 4px;
-    margin-left: 40%;
+    margin-left: 35%;
     padding: 40px;
   
     width: 500px;
@@ -8,18 +8,37 @@
     overflow-x: hidden;
     overflow-y: auto;
     text-align: justify;
+    
+}
+.body{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 79%);
 }
 .items {
     list-style-type: none;
     padding: 0;
     margin-bottom: 40px;
   }
-  .items li {
-    background-color: var(--background-secondary-color);
+  .items .item-green{
+    background-color: green;
     -webkit-box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
 -moz-box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
 box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
-  color: var(--ternary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  }
+  .items .item-red{
+    background-color: red;
+    -webkit-box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
+-moz-box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
+box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
+  color: white;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -60,4 +79,81 @@ box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
   background-color: red;
   
   
+}
+.form {
+
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 0px;
+  width: 300px;
+  margin-left: 40%;
+}
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+.ic2 {
+  margin-top: 30px;
+}
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+.add-btn{
+  margin-top: 20%;
+}
+@media screen and (max-width: 860px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .hist {
+    margin-left: 20%;
+    width: 50%;
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+
+  .form {
+    margin-left: 0;
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 20px
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .hist {
+    margin-left: 10%;
+    margin-right: 20%;
+    width: 50%;
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+
+  .form {
+    margin-left: 0;
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 20px
+    
+  }
 }

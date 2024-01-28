@@ -1,10 +1,16 @@
 .App {
   text-align: center;
+ 
+}
+body{
+  /* background-color: #3C0753;
+  color: white; */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +41,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+img {
+  width: 4.5rem;
+  width: 4.5rem;
+  opacity: 0.5;
+}
+.balance-container {
+  display: flex;
+  flex-direction: column;
+}
+.inc-exp-container {
+ 
+  -webkit-box-shadow: 12px -23px 121px 12px rgba(87,71,87,0.79);
+-moz-box-shadow: 12px -23px 121px 12px rgba(87,71,87,0.79);
+box-shadow: 12px -23px 121px 12px rgba(87,71,87,0.79);
+  padding: 10px;
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  border-radius: 5px;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+ 
+  text-align: center;
+}
+.inc-exp-container .money-plus{
+  color: green;
+}
+.inc-exp-container .money-minus{
+  color: red;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid rgb(5, 5, 5);
+}
+
+.add-btn {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+.add-btn span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.add-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.add-btn:hover {
+  color: #fff;
+}
+
+.add-btn:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
