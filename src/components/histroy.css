@@ -11,8 +11,11 @@
     
 }
 .body{
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 79%);
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 12px -23px 121px 12px rgba(87,71,87,0.79);
+-moz-box-shadow: 12px -23px 121px 12px rgba(87,71,87,0.79);
+box-shadow: 12px -23px 121px 12px rgba(87,71,87,0.79);
 }
 .items {
     list-style-type: none;
