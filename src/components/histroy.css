@@ -1,0 +1,63 @@
+.hist{
+    margin: 4px, 4px;
+    margin-left: 40%;
+    padding: 40px;
+  
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+.items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .items li {
+    background-color: var(--background-secondary-color);
+    -webkit-box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
+-moz-box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
+box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
+  color: var(--ternary-color);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  }
+  
+  
+  .delete-btn{
+    cursor: pointer;
+    background-color: var(--minus-color);
+    color: var(--background-secondary-color);
+    box-shadow: var(--box-shadow);
+    border: 0;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 10px;
+    margin: 10px 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    opacity: 0;
+    transform: translate(80%, -70%);
+    transition: opacity 0.3s ease;
+  }
+  .btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+
+.items li:hover .delete-btn {
+  opacity: 1;
+ 
+
+  background-color: red;
+  
+  
+}
