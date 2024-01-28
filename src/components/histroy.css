@@ -128,7 +128,7 @@ box-shadow: 17px 7px 5px -10px rgba(87,71,87,1);
   margin-top: 20%;
 }
 @media screen and (max-width: 860px) {
-  /* Adjust styles for screens with a maximum width of 768px */
+  /* Adjust styles for screens with a maximum width of 768px efef*/
   .hist {
     margin-left: 20%;
     width: 50%;
