@@ -1,12 +1,12 @@
 
 import './App.css';
-import History from './components/history'
+import AllinOne from './components/AllinOne'
 function App() {
   return (
     <div className="App">
       
       
-      <History />
+      <AllinOne />
     </div>
   );
 }
